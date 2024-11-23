@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Benvenuto, <%= user.username %>!</h1>
+    <p>Benvenuto nella panoramica del nostro progetto!</p>
+    <nav>
+        <a href="/tasks?id=<%= user.id %>">Task</a>
+        <a href="/referral?id=<%= user.id %>">Referral</a>
+        <a href="/airdrop">Airdrop</a>
+    </nav>
+</body>
+</html>
